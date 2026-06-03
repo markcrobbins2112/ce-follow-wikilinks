@@ -1,0 +1,50 @@
+{
+  "name": "follow-wikilinks",
+  "displayName": "Follow Wikilinks",
+  "description": "Follows a wikilink or markdown link under the cursor, fallback to current line with a picker.",
+  "version": "1.0.0",
+  "publisher": "follow-wikilinks",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "files": [
+    "extension.js",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "extension.js",
+  "scripts": {
+    "package": "vsce package",
+    "test": "node ./out/test/runTest.js"
+  },
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "follow-wikilinks.follow-link",
+        "title": "Follow Link"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "follow-wikilinks.follow-link",
+        "key": "alt+g",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "author": "follow-wikilinks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/follow-wikilinks/follow-wikilinks"
+  },
+  "bugs": {
+    "url": "https://github.com/follow-wikilinks/follow-wikilinks/issues"
+  },
+  "homepage": "https://github.com/follow-wikilinks/follow-wikilinks"
+}
