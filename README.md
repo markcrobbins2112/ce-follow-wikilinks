@@ -1,3 +1,4 @@
 # README.md
+**VsCode/Cursor Extension**
 
-C:\_\follow-wikilinks\package,json
+Follows a wikilink or markdown link under the cursor, fallback to current line with a picker.
