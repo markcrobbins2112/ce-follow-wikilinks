@@ -3,7 +3,7 @@
   "displayName": "Follow Wikilinks",
   "description": "Follows a wikilink or markdown link under the cursor, fallback to current line with a picker.",
   "version": "1.0.0",
-  "publisher": "follow-wikilinks",
+  "publisher": "markchristianrobbins",
   "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
@@ -19,8 +19,7 @@
   ],
   "main": "extension.js",
   "scripts": {
-    "package": "vsce package",
-    "test": "node ./out/test/runTest.js"
+    "package": "vsce package"
   },
   "activationEvents": [],
   "contributes": {
@@ -38,13 +37,13 @@
       }
     ]
   },
-  "author": "follow-wikilinks",
+  "author": "markchristianrobbins",
   "repository": {
     "type": "git",
-    "url": "https://github.com/follow-wikilinks/follow-wikilinks"
+    "url": "https://github.com/markchristianrobbins/follow-wikilinks"
   },
   "bugs": {
-    "url": "https://github.com/follow-wikilinks/follow-wikilinks/issues"
+    "url": "https://github.com/markchristianrobbins/follow-wikilinks/issues"
   },
-  "homepage": "https://github.com/follow-wikilinks/follow-wikilinks"
+  "homepage": "https://github.com/markchristianrobbins/follow-wikilinks#readme"
 }
