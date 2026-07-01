@@ -2,8 +2,8 @@
   "name": "follow-wikilinks",
   "displayName": "Follow Wikilinks",
   "description": "Follows a wikilink or markdown link under the cursor, fallback to current line with a picker.",
-  "version": "1.0.0",
-  "publisher": "markchristianrobbins",
+  "version": "1.0.1",
+  "publisher": "markrobbins",
   "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
@@ -13,11 +13,12 @@
   ],
   "files": [
     "extension.js",
-    "package.json",
     "README.md",
+		"icon.jpg",
     "LICENSE"
   ],
-  "main": "extension.js",
+  "main": "./extension.js",
+  "icon": "icon.jpg",
   "scripts": {
     "package": "vsce package"
   },
@@ -28,22 +29,15 @@
         "command": "follow-wikilinks.follow-link",
         "title": "Follow Link"
       }
-    ],
-    "keybindings": [
-      {
-        "command": "follow-wikilinks.follow-link",
-        "key": "alt+g",
-        "when": "editorTextFocus"
-      }
     ]
   },
-  "author": "markchristianrobbins",
+  "author": "markrobbins",
   "repository": {
     "type": "git",
-    "url": "https://github.com/markchristianrobbins/follow-wikilinks"
+    "url": "https://github.com/markcrobbins2112/follow-wikilinks"
   },
   "bugs": {
-    "url": "https://github.com/markchristianrobbins/follow-wikilinks/issues"
+    "url": "https://github.com/markcrobbins2112/follow-wikilinks/issues"
   },
-  "homepage": "https://github.com/markchristianrobbins/follow-wikilinks#readme"
+  "homepage": "https://github.com/markcrobbins2112/follow-wikilinks#readme"
 }
